@@ -1,0 +1,68 @@
+.responsive__wrap {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url('../img/bg-two.png') left bottom no-repeat;
+}
+
+.responsive__information {
+  max-width: 360px;
+  margin-left: auto;
+}
+
+.responsive__title {
+  font-size: 30px;
+  font-family: 'Raleway',sans-serif;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: left;
+  position: relative;
+  padding-top: 25px;
+
+
+  &::before {
+    background-color: $circle-bg;
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    top: 0;
+  }
+}
+
+.responsive__text {
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  line-height: 1.429;
+  margin: 0;
+
+}
+
+.responsive__button {
+  @include button($bg: $thirty) {
+    margin-bottom: 0px;
+  };
+}
+
+@media (max-width: 768px) {
+
+  .responsive__wrap {
+    background: none;
+  }
+
+  .responsive__information {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .responsive__wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}

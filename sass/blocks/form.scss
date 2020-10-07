@@ -1,0 +1,46 @@
+$input-bg: #202020;
+
+.form {
+  label {
+    @include visually-hidden;
+  }
+}
+
+.form__input {
+
+  input, textarea {
+    padding: 20px 10px 20px 30px;
+    border-radius: 10px;
+    background-color: $input-bg;
+    width: 100%;
+    display: block;
+    border: none;
+    box-shadow: none;
+    resize: none;
+
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: $white;
+    }
+
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+}
+
+.form__button {
+  @include button();
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px;
+
+}

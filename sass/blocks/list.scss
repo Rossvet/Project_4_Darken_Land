@@ -1,0 +1,33 @@
+.responsive__list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.list__element {
+  font-size: 14px;
+  color: rgb(149, 149, 149);
+  line-height: 1.286;
+  position: relative;
+  margin: 24px 0 24px;
+  padding-left: 30px;
+
+  &:first-child {
+    margin-top: 10px;
+  }
+
+  &:last-child {
+  margin-bottom: 10px;
+}
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $second;
+    width: 8px;
+    height: 3px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
